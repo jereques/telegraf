@@ -5,6 +5,8 @@ pipeline {
       steps {
         sh 'echo "Start build"'
         sh 'go version'
+        sh '''pwd
+ls -al'''
       }
     }
 
