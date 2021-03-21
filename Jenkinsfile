@@ -4,7 +4,9 @@ pipeline {
     stage('build') {
       steps {
         sh 'echo "Start build"'
-        sh 'make'
+        sh '''go version
+make'''
+        archiveArtifacts 'telegraf'
       }
     }
 
