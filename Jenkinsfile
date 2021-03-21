@@ -4,9 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'echo "Start build"'
-        sh 'go version'
-        sh '''pwd
-ls -al'''
+        sh 'make'
       }
     }
 
